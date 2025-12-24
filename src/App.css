@@ -213,6 +213,11 @@ input::placeholder {
     margin-top: 25%;
   }
 
+  .tagline1 {
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+  }
+
   .input-container {
     width: 260px;
     margin-top: 20px;
