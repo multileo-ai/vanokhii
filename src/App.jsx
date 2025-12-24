@@ -20,7 +20,7 @@ function App() {
       <header className="logo-header">Vanokhi</header>
 
       <main className="hero-content">
-        <p className="tagline">Curating Timeless Elegance</p>
+        <p className="tagline">A CURATED EXPERIENCE IS FORMING <br /> IN THE MAKING</p>
 
         <h1>
           <span className="line">Website</span>
