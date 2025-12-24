@@ -188,9 +188,13 @@ input::placeholder {
   }
 
   h1 {
-    font-size: 3.2rem; /* Adjusted for mobile portrait */
+    font-size: 2.2rem; /* Adjusted for mobile portrait */
     /* margin-bottom: 15px; */
     margin-top: 40px;
+  }
+
+  .hero-content {
+    margin: 0;
   }
 
   .tagline {
