@@ -35,7 +35,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  border: 20px solid var(--van-tan); /* Desktop Border */
   z-index: 100;
   background-color: var(--van-red);
   overflow: hidden;
@@ -58,7 +57,7 @@ body {
 
 .logo-header {
   position: absolute;
-  top: 50px;
+  top: 80px;
   font-family: "VanokhiSerif", serif !important;
   font-size: clamp(2.5rem, 8vw, 5rem);
   text-transform: uppercase;
@@ -88,17 +87,18 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(2rem, 6vw, 5.5rem);
   line-height: 0.95;
   font-weight: 400;
   margin-top: 20px;
   /* margin-bottom: 24px; */
-
+  text-wrap: nowrap;
   overflow: hidden;
 }
 
 h1 span.line {
   display: block;
+  font-size: clamp(1.5rem, 5.5vw, 5rem);
   animation: revealUp 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -111,7 +111,7 @@ h1 span.italic {
 }
 
 .notify-section {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +184,7 @@ input::placeholder {
   }
 
   .logo-header {
-    top: 35px;
+    top: 55px;
   }
 
   h1 {
@@ -216,7 +216,7 @@ input::placeholder {
 /* For very small devices */
 @media (max-width: 400px) {
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   .input-container {
