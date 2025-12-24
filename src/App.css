@@ -85,9 +85,18 @@ body {
   animation: fadeIn 2s ease forwards;
 }
 
+.tagline1 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  color: var(--van-tan);
+  animation: fadeIn 2s ease forwards;
+}
+
 h1 {
   text-transform: uppercase;
-  font-size: clamp(2rem, 6vw, 5.5rem);
+  font-size: clamp(2rem, 5vw, 5rem);
   line-height: 0.95;
   font-weight: 400;
   margin-top: 20px;
@@ -105,13 +114,14 @@ h1 span.line {
 h1 span.italic {
   display: block;
   /* font-style: italic; */
+  margin-top: 20px;
   font-weight: 700;
-  color: var(--van-tan);
+  color: var(--van-cream);
   animation: revealUp 1.8s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .notify-section {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;

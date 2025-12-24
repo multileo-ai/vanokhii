@@ -20,12 +20,18 @@ function App() {
       <header className="logo-header">Vanokhi</header>
 
       <main className="hero-content">
-        <p className="tagline">A CURATED EXPERIENCE IS FORMING <br /> IN THE MAKING</p>
+        <p className="tagline">
+          A CURATED EXPERIENCE IS FORMING
+        </p>
 
         <h1>
           <span className="line">Website</span>
           <span className="italic">Coming Soon</span>
         </h1>
+
+        <p className="tagline1">
+          IN THE MAKING
+        </p>
 
         <div className="notify-section">
           {!isSent ? (
@@ -49,21 +55,20 @@ function App() {
             <div className="success-ui" style={{ textAlign: "center" }}>
               <p
                 style={{
-                  fontStyle: "italic",
-                  color: "var(--van-tan)",
-                  fontSize: "1.2rem",
-                }}
-              >
-                Thank you.
-              </p>
-              <p
-                style={{
                   fontSize: "0.8rem",
                   letterSpacing: "2px",
                   marginTop: "5px",
                 }}
               >
                 THE LEGACY AWAITS YOU.
+              </p>
+              <p
+                style={{
+                  color: "var(--van-cream)",
+                  fontSize: "1.2rem",
+                }}
+              >
+                Thank you.
               </p>
             </div>
           )}
