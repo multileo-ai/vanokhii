@@ -20,14 +20,14 @@ function App() {
       <header className="logo-header">Vanokhi</header>
 
       <main className="hero-content">
-        <p className="tagline">A CURATED EXPERIENCE IS FORMING</p>
+        {/* <p className="tagline">A CURATED EXPERIENCE IS FORMING</p> */}
 
         <h1>
-          <span className="line">Website</span>
-          <span className="italic">Coming Soon</span>
+          <span className="line">A CURATED EXPERIENCE IS FORMING</span>
+          <span className="italic">IN THE MAKING</span>
         </h1>
 
-        <p className="tagline1">IN THE MAKING</p>
+        {/* <p className="tagline1">IN THE MAKING</p> */}
 
         <div className="notify-section">
           {!isSent ? (

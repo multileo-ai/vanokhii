@@ -96,7 +96,7 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(1rem, 3vw, 3rem);
   line-height: 0.95;
   font-weight: 400;
   margin-top: 20px;
@@ -107,7 +107,7 @@ h1 {
 
 h1 span.line {
   display: block;
-  font-size: clamp(1.5rem, 5.5vw, 5rem);
+  font-size: clamp(.7rem, 3.5vw, 3rem);
   animation: revealUp 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
