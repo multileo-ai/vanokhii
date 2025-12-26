@@ -195,6 +195,10 @@ input::placeholder {
     border-width: 12px; /* Thinner border for small screens */
   }
 
+  .bg-scrolling-text{
+    top: 40%;
+  }
+
   .logo-header {
     top: 85px;
   }
