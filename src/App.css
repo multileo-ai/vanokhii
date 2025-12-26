@@ -5,16 +5,6 @@
   src: url(/fonts/Carina.ttf);
 }
 
-@font-face {
-  font-family: "Fragor";
-  src: url(/fonts/Fragor-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url(/fonts/Montserrat-VariableFont_wght.ttf);
-}
-
 :root {
   --van-red: #9a0002;
   --van-cream: #faecd9;
@@ -30,7 +20,7 @@
 body {
   background-color: var(--van-red);
   color: var(--van-tan);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
