@@ -57,7 +57,7 @@ body {
 
 .logo-header {
   position: absolute;
-  top: 100px;
+  top: 80px;
   font-family: "VanokhiSerif", serif !important;
   font-size: clamp(2.5rem, 8vw, 5rem);
   text-transform: uppercase;
@@ -96,17 +96,20 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: clamp(1rem, 3.5vw, 2rem);
+  font-size: clamp(1.3rem, 3vw, 2.5rem);
   line-height: 0.95;
-  font-weight: 700;
-  margin-top: 80px;
+  font-weight: 400;
+  margin-top: 110px;
   /* margin-bottom: 24px; */
   text-wrap: nowrap;
   overflow: hidden;
+  word-spacing: 10px;
+  
 }
 
 h1 span.line {
   display: block;
+  /* font-size: clamp(.7rem, 3.5vw, 2rem); */
   animation: revealUp 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -114,13 +117,13 @@ h1 span.italic {
   display: block;
   /* font-style: italic; */
   margin-top: 20px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--van-cream);
   animation: revealUp 1.8s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .notify-section {
-  margin-top: 80px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +135,7 @@ h1 span.italic {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--van-tan);
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .input-container {
@@ -196,9 +199,10 @@ input::placeholder {
     top: 85px;
   }
 
-  h1 { /* Adjusted for mobile portrait */
+  h1 {
+     /* Adjusted for mobile portrait */
     /* margin-bottom: 15px; */
-    margin-top: 80px;
+    margin-top: 150px;
   }
 
   .hero-content {
@@ -232,6 +236,9 @@ input::placeholder {
 
 /* For very small devices */
 @media (max-width: 400px) {
+  h1 {
+    font-size: 2.2rem;
+  }
 
   .input-container {
     width: 220px;

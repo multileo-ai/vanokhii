@@ -23,8 +23,8 @@ function App() {
         {/* <p className="tagline">A CURATED EXPERIENCE IS FORMING</p> */}
 
         <h1>
-          <span className="line">A CURATED EXPERIENCE IS FORMING</span>
-          <span className="italic">IN THE MAKING</span>
+          <span className="line">A CURATED EXPERIENCE </span>
+          <span className="italic">IS FORMING</span>
         </h1>
 
         {/* <p className="tagline1">IN THE MAKING</p> */}
