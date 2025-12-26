@@ -57,7 +57,7 @@ body {
 
 .logo-header {
   position: absolute;
-  top: 80px;
+  top: 100px;
   font-family: "VanokhiSerif", serif !important;
   font-size: clamp(2.5rem, 8vw, 5rem);
   text-transform: uppercase;
@@ -96,10 +96,10 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 3.5vw, 2rem);
   line-height: 0.95;
-  font-weight: 400;
-  margin-top: 20px;
+  font-weight: 700;
+  margin-top: 80px;
   /* margin-bottom: 24px; */
   text-wrap: nowrap;
   overflow: hidden;
@@ -107,7 +107,6 @@ h1 {
 
 h1 span.line {
   display: block;
-  font-size: clamp(.7rem, 3.5vw, 3rem);
   animation: revealUp 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -121,7 +120,7 @@ h1 span.italic {
 }
 
 .notify-section {
-  margin-top: 30px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,10 +196,9 @@ input::placeholder {
     top: 85px;
   }
 
-  h1 {
-    font-size: 2.2rem; /* Adjusted for mobile portrait */
+  h1 { /* Adjusted for mobile portrait */
     /* margin-bottom: 15px; */
-    margin-top: 40px;
+    margin-top: 80px;
   }
 
   .hero-content {
@@ -234,9 +232,6 @@ input::placeholder {
 
 /* For very small devices */
 @media (max-width: 400px) {
-  h1 {
-    font-size: 2.2rem;
-  }
 
   .input-container {
     width: 220px;
