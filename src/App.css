@@ -195,7 +195,7 @@ input::placeholder {
     border-width: 12px; /* Thinner border for small screens */
   }
 
-  .bg-scrolling-text{
+  .bg-scrolling-text {
     top: 45%;
   }
 
@@ -206,7 +206,11 @@ input::placeholder {
   h1 {
     /* Adjusted for mobile portrait */
     /* margin-bottom: 15px; */
-    margin-top: 210px;
+    margin-top: 200px;
+  }
+
+  .input-label {
+    margin-bottom: 0px;
   }
 
   .hero-content {
