@@ -1,18 +1,38 @@
 import { useState } from "react";
 import "./App.css";
+// 1. Import the database and Firestore functions
+import { db } from "./firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 function App() {
   const [email, setEmail] = useState("");
   const [isSent, setIsSent] = useState(false);
+  const [loading, setLoading] = useState(false); // Optional: to prevent double clicks
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email) setIsSent(true);
+    if (!email) return;
+
+    setLoading(true);
+
+    try {
+      // 2. Add the email to a collection named "subscribers"
+      await addDoc(collection(db, "subscribers"), {
+        email: email,
+        timestamp: serverTimestamp(), // Stores exactly when they signed up
+      });
+
+      setIsSent(true);
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="main-viewport">
-      {/* Background Infinite Scroller */}
       <div className="bg-scrolling-text">
         VANOKHI — CULTURE — REIMAGINED — VANOKHI — CULTURE — REIMAGINED —
       </div>
@@ -20,14 +40,10 @@ function App() {
       <header className="logo-header">Vanokhi</header>
 
       <main className="hero-content">
-        {/* <p className="tagline">A CURATED EXPERIENCE IS FORMING</p> */}
-
         <h1>
           <span className="line">A CURATED EXPERIENCE </span>
           <span className="italic">IS FORMING</span>
         </h1>
-
-        {/* <p className="tagline1">IN THE MAKING</p> */}
 
         <div className="notify-section">
           {!isSent ? (
@@ -41,9 +57,10 @@ function App() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  disabled={loading} // Disable while sending
                 />
-                <button type="submit" className="submit-btn">
-                  Notify
+                <button type="submit" className="submit-btn" disabled={loading}>
+                  {loading ? "..." : "Notify"}
                 </button>
               </form>
             </>
@@ -58,22 +75,16 @@ function App() {
               >
                 THE LEGACY AWAITS YOU.
               </p>
-              <p
-                style={{
-                  color: "var(--van-cream)",
-                  fontSize: "1.2rem",
-                }}
-              >
+              <p style={{ color: "var(--van-tan)", fontSize: "1.2rem" }}>
                 Thank you.
               </p>
             </div>
           )}
         </div>
 
-        {/* Instagram Button */}
         <div className="social-container">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/vanokhi.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
